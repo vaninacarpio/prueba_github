@@ -1,0 +1,61 @@
+.cabeceraIndex{
+    background-image: linear-gradient(to bottom,nth($colors, 7),nth($colors, 3));
+    padding: 18% 5% 8% 8%;
+    .destacados{
+        @include encabezados(nth($colors,1));
+        font-size: 5vw;
+        animation-duration: 2s;
+    }
+}
+
+.generalWork{
+    max-width: 100%;
+    .worksTitle{
+        @include encabezadosSecond(nth($colors,2));
+        font-size: 2vw;
+        padding-top: 5%;
+        text-align: center;
+    }
+    .imageWorks{
+        padding: 5%;
+    }
+}
+
+.projects{
+    padding: 5%;
+    background-color: nth($colors, 7);
+    article{
+        padding: 2% 3%;
+        .caption{
+            @include caption(nth($colors, 6));
+            font-size: 1.5vw;
+            text-align: center;
+            letter-spacing: 10px;
+            padding: 1em;
+        }
+        p{
+            @include encabezados(nth($colors,1));
+            font-size: 4vw;
+            text-align: center;
+            font-weight: nth($fontWeight,1);
+        }
+    }
+}
+
+.contact{
+    background-image: linear-gradient(to right,nth($colors, 3),nth($colors,2));
+    padding: 12% 6%;
+    #hello{
+        @include caption(nth($colors,6));
+        font-size: 1.8vw;
+        padding-bottom: 1em;
+        letter-spacing: 10px;
+        text-align: left;      
+    }
+    p{
+        @include encabezados(nth($colors,1));
+        font-size: 5vw;
+        line-height: 6.5vw;
+        font-weight: nth($fontWeight, 3);
+    }
+}

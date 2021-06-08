@@ -1,0 +1,56 @@
+/*Partials: Base*/
+@import 'base/reset';
+@import 'base/colors';
+@import 'base/fonts';
+@import 'base/icons';
+@import '../scss/base/size';
+
+/*Partials: Components*/
+@import 'components/buttons';
+
+/*Partials: Functions*/
+@import 'functions/extends';
+@import 'functions/list';
+@import 'functions/mixins';
+
+/*Partials: Layout*/
+@import 'layout/header';
+@import 'layout/index';
+@import 'layout/footer';
+@import 'layout/about';
+@import '../scss/layout/work';
+@import 'layout/contact';
+
+/*Error 404*/
+body{
+    .generalError{
+        margin-bottom: 6rem;
+        .imageError{
+            padding-top: 12rem;
+            width: 50%;
+        }
+        .errorText{
+            padding: 1rem;
+            h2{
+                font-family:$fontPrincipal;
+                font-weight: nth($fontWeight ,5);
+                color: nth($colors, 7);
+                text-align: center;
+            }
+            p{
+                font-family: $fontPrincipal;
+                font-size: 1rem;
+                color: nth($colors, 7);
+                text-align: center;
+            }
+        .errorCta{
+            margin-bottom: 3rem;
+            @extend %flexbox;
+            .errorButton{
+                color: nth($colors, 2);
+            }
+
+        }
+        }
+    }
+}

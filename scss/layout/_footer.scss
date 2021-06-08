@@ -1,0 +1,51 @@
+footer{
+    background-color: nth($colors, 3);
+    padding: 1.5rem;
+    font-family: $fontSecondary;
+    font-size: 0.9rem;
+    color: nth($colors, 4);
+    
+    .footerContact{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @media (max-width:576px) {
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footerCopy{
+            display: flex;
+            padding-left: 4%;
+        }
+        .footerSocial{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 2%;
+
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+
+                li{
+                    list-style: none;
+                    cursor: pointer;
+                    margin:1rem;
+                    a{
+                        text-decoration: none;
+                        color: nth($colors, 4);
+                    
+                    &:hover{
+                        color: nth($colors, 6);
+                    }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,481 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* MENU */
+
+.menuVanu{
+    background-color: black;
+    color: #F4D4E0;
+}
+
+.logo{
+    height: 8%;
+    width: 10%;
+    transition: 5s;
+    -moz-transition: 3s;
+    -webkit-transition: 3s;
+    -o-transition: 3s;
+    margin-left: 5%;
+}
+
+.logo:hover{
+    transform:rotate(360deg);
+-ms-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-webkit-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+}
+
+.menuLink{
+    color: #F4D4E0;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 4px;
+}
+
+.navbar-toggler{
+    border: 1px solid #F4D4E0;
+    
+}
+
+.navbar-toggler-icon{
+    color: #F4D4E0;
+}
+
+/*Probé con esto y tampoco cambia*/
+.hamburguesa{
+    color: #F4D4E0 ;
+    background-color: #f4d4e046;
+    border-radius: 10%;
+}
+
+#navbarNavDropdown{
+    justify-content: flex-end;
+    margin-right: 3%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: 2rem;
+}
+
+/* INDEX */
+.cabeceraIndex{
+    background-image: linear-gradient(to bottom, black, #051f42);
+    padding: 18% 5% 8% 8%;
+}
+.destacados{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 5vw;
+    color: #F4D4E0;
+    animation-duration: 2s;
+}
+
+.works{
+    background-color: #F4D4E0;
+    height: 50%;
+}
+
+.row{
+    display: flex;
+    padding: 8%;
+}
+
+.generalBlanco{
+    background-color:white;
+}
+
+.worksTitle{
+    font-family: 'Inconsolata', monospace;
+    font-size: 3vw;
+    padding-bottom: 1%;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #0E3B7C;
+}
+
+.selected{
+    margin: 0%;
+}
+
+.projects{
+    background: black;
+    color: #F4D4E0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 5rem;
+    padding: 1em;
+}
+.projects article{
+    padding: 2% 3%;
+}
+.caption{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.85vw;
+    padding-bottom: 3em;
+    letter-spacing: 10px;
+    text-align: center;  
+    color: white; 
+}
+.projects article p{
+    font-size: 4vw;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.contact{
+    background-image: linear-gradient(to right, #051f42, #0E3B7C);
+    padding: 12% 6%;
+}
+.contact #hello{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.8vw;
+    padding-bottom: 1em;
+    letter-spacing: 10px;
+    text-align: left;  
+    color: white;     
+}
+.contact p{
+    color: #F4D4E0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 5vw;
+    line-height: 6.5vw;
+}
+
+/*ABOUT SECTION*/
+.headAbout{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+}
+
+.headAbout .typewritter{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+}
+
+#quote{
+    padding: 15%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 3rem;
+    color: black;
+}
+
+.vanu{
+    display: flex;
+    flex-direction: row;
+    animation-duration: 4s;
+    animation-name: aparecer;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.aboutContainer{
+    background-color: #F4D4E0;
+}
+
+.titleAbout{
+    font-size: 8rem;
+    color: #F4D4E0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder; 
+    width: 100%;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+}
+
+.about{
+    padding: 0% 5% 8% 5%;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+
+.about h3{
+    color: #0E3B7C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.about p{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;;
+}
+
+.captionBlue{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+    color: #0E3B7C;
+    letter-spacing: 0.3rem;
+
+}
+
+.cvTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight:700;
+    color: #0E3B7C;
+    letter-spacing: 0.1rem;
+}
+
+.companyName{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight:500;
+    color: #0E3B7C;
+}
+
+.contentCv{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+}
+
+
+/*WORK SECTION*/
+
+.headWork{
+    background-color: black;
+    padding: 14em 12em 10em 9em;
+}
+
+.stranger{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1em;
+    letter-spacing: 10px;
+    text-align: center;  
+    color: white; 
+    padding-bottom: 3em;
+}
+
+.posts{
+    color: #F4D4E0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.posts a{
+    color: #3A7EC1;
+    text-decoration: none;
+}
+
+.mainProject {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.projectTitle{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10%;
+}
+
+.projecto{
+    font-size: 3em;
+    font-weight: lighter;
+    color: #0E3B7C;
+}
+
+.descriptionProject{
+    text-align: left;
+    font-size: 1em;
+    color: #051f42;
+    padding: 0 5%;
+}
+.itemDouble{
+    flex-basis: 100%;
+}
+
+.itemHalf{
+    flex-basis: 50%;
+}
+
+.sfVideo{
+    width: 100%;
+}
+
+.mainKvn{
+    display: flex;
+    flex-direction: row;
+    background-color: #F4D4E0;
+}
+
+.kvnWomen{
+    flex-basis: 30%;
+}
+
+.kvnTitles{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 2%;
+}
+
+.kvnGirl{
+    flex-basis: 30%;
+}
+
+.itemThird{
+display: flex;
+flex-flow: row nowrap;
+height: 426px;
+}
+
+
+/*CONTACT SECTION*/
+
+.headContact{
+    background-color:#0E3B7C;
+    margin: 0;
+    padding: 10rem 0 6rem 0;
+
+}
+
+.container .headContact .row{
+    background-color:#0E3B7C;
+    margin: 0;
+    padding: 0;
+}
+
+.subtitle{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1em;
+    color: #F4D4E0;
+    text-align: center;
+    padding: 1em 8em 1em 8em;
+    line-height: 1.5em;
+}
+
+.contactSecond{
+    padding: 0;
+    margin: 0;
+}
+
+.contactThird{
+    height: 60%;
+}
+
+.contactFourth{
+    padding: 5% 0;
+    background-color: #F4D4E0;
+}
+
+.formContact{
+    margin: 0;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    padding: 0;
+}
+
+form{
+    background-color: #F4D4E0;
+    text-decoration: none;
+    padding: 10%;
+    align-content: center;
+}
+
+.opStatus{
+padding-left: 10%;
+}
+
+.opciones{
+    font-size: 0.8rem;
+}
+
+.placeTexto{
+    font-size: 0.8rem;
+    padding: 1.8%;
+}
+
+.boton{
+    background-color:#562fff;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 0.15rem;
+}
+
+.boton:hover{
+    background-color:#66C6C6;
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color:#051f42;
+    color: #66C6C6;
+    padding: 2rem;
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.8rem;
+}
+
+.footerContact{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerContact .footerCopy{
+    display: flex;
+}
+
+.footerContact .footerSocial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerContact .footerSocial ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.footerContact .footerSocial ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+.footerContact .footerSocial ul li a{
+    text-decoration: none;
+    color: #66C6C6;
+}
+
+.footerContact .footerSocial ul li a:hover{
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .footerContact{
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: center;
+    }
+ }
+
+

@@ -1,0 +1,45 @@
+/*Mixin Estilos de textos*/
+
+@mixin fontNav ($colors){
+    font-family: $fontSecondary;
+    letter-spacing: 4px;
+    color: $colors;
+}
+
+@mixin encabezados ($colors){
+    font-family: $fontPrincipal;
+    font-weight: lighter;
+    color: $colors;
+}
+
+@mixin encabezadosSecond ($colors){
+    font-family: $fontSecondary;
+    letter-spacing: 2px;
+    color: $colors;
+}
+
+@mixin caption ($colors){
+    font-family: $fontSecondary;
+    letter-spacing: 10px;
+    color: $colors; 
+}
+
+@mixin paragraphs ($colors){
+    font-family: $fontPrincipal;
+    font-size: 0.8rem;
+    color: $colors;
+}
+
+@mixin fontFooter ($colors){
+    font-family: $fontSecondary;
+    font-size: 0.8rem;
+    color: $colors;
+}
+
+/*Animaciones*/
+@mixin prefijos ($kits) {
+    -webkit-transform: $kits;
+    -o-transform: $kits;
+    -moz-transform: $kits;
+    transform: $kits;
+}

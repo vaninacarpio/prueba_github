@@ -1,0 +1,12 @@
+/*Extend Flexbox*/
+%flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%flexboxRow{
+    display: flex;
+    flex-flow: row wrap;
+}

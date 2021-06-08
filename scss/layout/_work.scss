@@ -1,0 +1,168 @@
+@import '../base/size';
+
+/*Section Work*/
+.headWork{
+    background-color: nth($colors, 7);
+    padding: 14em 12em 10em 9em;
+    .stranger{
+        @include encabezadosSecond(nth($colors,6));
+        font-size: 1rem;
+        letter-spacing: 10px;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    .posts{
+        @include encabezados(nth($colors,1));
+        font-size: 4rem;
+        text-align: center;
+        a{
+        text-decoration: none;
+        color: nth($colors, 5);
+        }
+    }
+}
+
+.mainProject{
+    width: $anchoBase;
+    @extend %flexboxRow;
+    .projectTitle{
+        @extend %flexbox;
+        padding: 10%;
+        .projecto{
+            font-size: 3rem;
+            @include encabezados(nth($colors,   7));
+        }
+        .descriptionProject{
+            border-left: 1px solid nth($colors, 7);
+            @include paragraphs (nth($colors,  7));
+            padding: 0 3%;
+            margin: 4%;
+            text-align: left;
+            width: 50%;
+        }
+        }
+
+    .itemDouble{
+        width: $anchoBase;
+    }
+    .itemHalf{
+        width: $anchoBase/2;
+    }
+}
+
+.mainEnfo{
+    width: $anchoBase;
+    @extend %flexboxRow;
+    .projectTitle{
+        @extend %flexbox;
+        width: $anchoBase/3;
+        .projecto{
+            font-size: 3rem;
+            @include encabezados(nth($colors, 7));
+            padding: 0%;
+        }
+        .descriptionProject{
+            @include paragraphs (nth($colors,   7));
+            padding: 0;
+            text-align: left;
+            width: 60%;
+        }
+    }
+    .itemThird{
+        width: $anchoBase/3;
+    }
+    .itemDouble{
+        width: $anchoBase;
+    }
+}
+
+.mainProject{
+    width: $anchoBase;
+    @extend %flexboxRow;
+    .videoSmart{
+        @extend %flexbox;
+        padding-bottom: 15%;
+        video{
+            width: 70%;
+        }
+    }
+}
+
+.mainKvn{
+    width: $anchoBase;
+    @extend %flexbox;
+    .kvnWomen{
+        width: $anchoBase,3;
+    }
+    .kvnTitles{
+        width: $anchoBase,3;
+        .projecto{
+            @include encabezados (nth($colors,7));
+            text-align: center;
+            font-size: 3rem;
+
+        }
+        p{
+            @include paragraphs (nth($colors,1));
+            text-align: center;
+            font-size: 4rem;
+        }
+    }
+    .kvnGirl{
+        width: $anchoBase/3;
+        flex-basis: 30%
+    }
+}
+
+.mainTransener{
+    .projectTitle{
+        @extend %flexbox;
+        padding: 10%;
+            .projecto{
+                font-size: 3rem;
+                @include encabezados(nth($colors,   7));
+            }
+            .descriptionProject{
+                @include paragraphs (nth($colors,   7));
+                padding: 0 5%;
+                text-align: center;
+                width: 60%;
+            }
+    }
+    .imagesT{
+        @extend %flexboxRow;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 15%;
+        .itemThird{
+            width: 30%;
+        }    
+    }
+    .itemDouble{
+        width: $anchoBase;
+
+    }
+}
+
+.mainMaker{
+    width: $anchoBase;
+    .projectTitle{
+        width: $anchoBase/2;
+        @extend %flexbox;
+        padding: 10%;
+            .projecto{
+                font-size: 3rem;
+                @include encabezados(nth($colors,   7));
+            }
+            .descriptionProject{
+                @include paragraphs (nth($colors,   7));
+                padding: 0 5%;
+                text-align: center;
+            }
+    }
+    .itemHalf{
+        @extend %flexbox;
+        width: $anchoBase/2;
+        }
+
+}
