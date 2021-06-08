@@ -46,8 +46,16 @@ body{
         .errorCta{
             margin-bottom: 3rem;
             @extend %flexbox;
-            .errorButton{
-                color: nth($colors, 2);
+            button .errorBotones{
+                background-color: nth($colors, 2);
+                color: nth($colors, 6);
+                border:1px solid nth($colors, 2);
+                border-radius: 2%;
+                &:hover{
+                    color: nth($colors, 6);
+                    background-color: nth($colors, 4);
+                    cursor: pointer;
+                }
             }
 
         }
