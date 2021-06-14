@@ -29,7 +29,7 @@ body .generalError .errorText .errorCta, .mainMaker .itemHalf, .mainMaker .proje
   flex-wrap: wrap;
 }
 
-.mainTransener .imagesT, .mainEnfo, .mainProject {
+.mainTransener .imagesT, .mainEnfo, .mainProject, .headAbout .vanu img, .headAbout .typewritter, .headAbout {
   display: flex;
   flex-flow: row wrap;
 }
@@ -216,6 +216,90 @@ footer .footerContact .footerSocial ul li a {
 }
 footer .footerContact .footerSocial ul li a:hover {
   color: white;
+}
+
+/*About Section*/
+.headAbout {
+  padding-top: 5%;
+}
+.headAbout .typewritter {
+  width: 50%;
+  align-items: center;
+}
+.headAbout .typewritter #quote {
+  padding: 15%;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: black;
+}
+.headAbout .vanu {
+  width: 50%;
+  padding-top: 10%;
+}
+.headAbout .vanu img {
+  height: 90%;
+  justify-content: center;
+  animation-duration: 5s;
+  animation-name: aparecer;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*About Me*/
+.containerAbout .titleAbout {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: #F4D4E0;
+  font-size: 24vh;
+  font-weight: lighter;
+}
+.containerAbout .about h4 {
+  font-family: "Inconsolata", monospace;
+  color: #0E3B7C;
+  font-size: 0.8 rem;
+  padding-bottom: 2%;
+}
+
+/*CV*/
+.containerCv .clients .cvTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.containerCv .clients .contenido {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+.containerCv .workExp .cvTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.containerCv .workExp .exp h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #0E3B7C;
+}
+.containerCv .workExp .exp .contenido {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+.containerCv .skills .cvTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.containerCv .skills .contenido {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
 }
 
 /*Section Work*/
@@ -418,8 +502,16 @@ body .generalError .errorText p {
 body .generalError .errorText .errorCta {
   margin-bottom: 3rem;
 }
-body .generalError .errorText .errorCta .errorButton {
-  color: #0E3B7C;
+body .generalError .errorText .errorCta button .errorBotones {
+  background-color: #0E3B7C;
+  color: white;
+  border: 1px solid #0E3B7C;
+  border-radius: 2%;
+}
+body .generalError .errorText .errorCta button .errorBotones:hover {
+  color: white;
+  background-color: #66C6C6;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

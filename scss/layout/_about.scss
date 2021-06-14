@@ -1,0 +1,97 @@
+/*About Section*/
+.headAbout{
+    @extend %flexboxRow;
+    padding-top: 5%;
+    .typewritter{
+        @extend %flexboxRow;
+        width: 50%;
+        align-items: center;
+        #quote{
+            padding: 15%;
+            font-size: 3rem;
+            @include encabezados(nth($colors,7));
+        }
+    }
+    .vanu{
+        width: 50%;
+        padding-top: 10%;
+        img{
+            height: 90%;
+            @extend %flexboxRow;
+            justify-content: center;
+            animation-duration: 5s;
+            animation-name: aparecer;
+            @keyframes aparecer{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+        }        
+    }
+}
+
+/*About Me*/
+.containerAbout{
+    .titleAbout{
+        @include encabezados(nth($colors,1));
+        font-size: 24vh;
+        font-weight: nth($fontWeight, 1);
+    }
+    .about{
+        h4{
+            font-family: $fontSecondary;
+            color: nth($colors, 2);
+            font-size: 0.8 rem;
+            padding-bottom: 2%;
+        }
+    }
+}
+
+/*CV*/
+.containerCv{
+    .clients{
+        .cvTitle{
+            font-family: $fontPrincipal;
+            font-size: 0.8rem;
+            font-weight: nth($fontWeight, 4);
+        }
+        .contenido{
+            font-family: $fontPrincipal;
+            font-size: 0.9rem;
+        }
+    }
+    .workExp{
+        .cvTitle{
+            font-family: $fontPrincipal;
+            font-size: 0.8rem;
+            font-weight: nth($fontWeight, 4);
+            }
+        .exp{
+            h5{
+                font-family: $fontPrincipal;
+                font-weight: nth($fontWeight,2);
+                font-size: 0.9rem;
+                color: nth($colors, 2);
+            }
+            .contenido{
+                font-family: $fontPrincipal;
+                font-size: 0.9rem;
+                }
+        }
+    }
+    
+    .skills{
+        .cvTitle{
+            font-family: $fontPrincipal;
+            font-size: 0.8rem;
+            font-weight: nth($fontWeight, 4);
+        }
+        .contenido{
+            font-family: $fontPrincipal;
+            font-size: 0.9rem;
+        }
+    }
+}

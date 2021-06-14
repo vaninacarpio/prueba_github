@@ -109,7 +109,7 @@
         }
     }
     .kvnGirl{
-        width: $anchoBase/3;
+        width:$anchoBase/3;
         flex-basis: 30%
     }
 }
@@ -152,10 +152,10 @@
         padding: 10%;
             .projecto{
                 font-size: 3rem;
-                @include encabezados(nth($colors,   7));
+                @include encabezados(nth($colors,7));
             }
             .descriptionProject{
-                @include paragraphs (nth($colors,   7));
+                @include paragraphs (nth($colors,7));
                 padding: 0 5%;
                 text-align: center;
             }

@@ -59,7 +59,7 @@
         <nav class="navbar navbar-expand-lg fixed-top menuVanu">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="index.html">
-                    <img src="../entrega15_aplicacandoSass/img/vc_logoblanco.svg" alt="logo vanu carpio">
+                    <img src="../entrega21_github/img/vc_logoblanco.svg" alt="logo vanu carpio">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,47 +94,52 @@
     </header>
 
     <!--Header de la sección-->
-    <section class="headAbout">
-        <div class="typewritter">
-            <p id="quote">
-                Keep your eyes in the stars and your feets in the ground.
-            </p>
+    <section class="headAbout container p-0">
+        <div class="row m-0 p-0">
+    
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 typewritter p-0">
+            <div id="quote"><span 
+                style='font-size:4rem;
+                '>&#128171;</span>
+                <p>Keep your eyes in the stars and your feets in the ground
+                </p>         
+            </div>
         </div>
 
-        <div class="vanu">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 vanu">
             <img src="img/aboutvanu.jpeg" alt="Foto de Vanu Carpio">
         </div>
     </section>
 
     <!-- Mi descripción-->
-    <section class="container p-0">
+    <section class="container p-0 containerAbout">
         <div class="row m-0 p-0">
             <div class="col-12 py-0 titleAbout">
                 <p>About Me</p>
             </div>
             <!--ENGLISH-->
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 p-5">
-                <h3 class="pb-3 captionBlue">EN</h3>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 p-5 about">
+                <h4>EN</h4>
                 <p>Hi! Glad to see you!</p>
                 <p>I’m a strategic designer based in Buenos Aires, Argentina. Focus on UX / UI design. My work combines
                     a background in graphic design, marketing, strategic thinking and technology.</p>
                 <p>I’m passionate about creating new experiences and products, with a strong visual identity and
                     solving problems with a centered human design vision.</p>
                 <p>During my career, I’ve worked in differents environments so I had the chance to develop my
-                    skilss of digital design, textile design and currently ux design.</p>
+                    skilss of digital design, textile design and currently ux/ui design.</p>
                 <p>Always looking forward to new challenges!</p>
             </div>
             <!--ESPAÑOL-->
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 p-5">
-                <h3 class="pb-3 captionBlue">ES</h3>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 p-5 about">
+                <h4>ES</h4>
                 <p>¡Hola! Gracias por visitarme.</p>
                 <p>Soy una diseñadora estratégica en Buenos Aires,Argentina.
                     Especializada en diseño UX / UI. Mi trabajo combina mis experiencias en diseño gráfico, marketing,
                     pensamiento estratégico y tecnología.</p>
                 <p> Me apasiona crear nuevas experiencias y productos, con una fuerte identidad visual y resolver
-                    problemas con una visión centrada en el diseño humano.</p>
-                <p> Durante mi carrera, he trabajado en diferentes ambientes por lo que tuve la oportunidad de
-                    desarrollar mis habilidades en diseño digital, diseño textil y actualmente diseño ux.</p>
+                    problemas con una visión centrado en los usuarios.</p>
+                <p> Durante mi carrera, he trabajado en diferentes áreas, desarrollando
+            mis habilidades en diseño digital, diseño textil y actualmente ux/ui.</p>
                 <p> ¡Siempre buscando nuevos desafíos!</p>
             </div>
 
@@ -170,14 +175,17 @@
     </div>
 
     <!--CV-->
-    <section class="container p-0">
-        <div class="row border border-2 p-0 my-5">
+    <section class="container p-0 containerCv">
+        <div class="row p-0 my-5">
+            <!--Emoji Column-->
+            <div class="emoji col-xl-3 col-lg-3 col-md-3 col-sm-12 p-5">
+                <span style='font-size:4rem;'>&#128073;&#127996;</span>                </div>
             <!--Clients-->
-            <div class="clients col-xl-4 col-lg-4 col-md-4 col-sm-12 p-5">
+            <div class="clients col-xl-3 col-lg-3 col-md-3 col-sm-12 p-5">
                 <div class="cvTitle py-2 border-bottom">
                     CLIENTS
                 </div>
-                <div class="contenidoClients d-flex flex-column justify-content-between pt-2">
+                <div class="contenido d-flex flex-column justify-content-between pt-2">
                     <p>Enfocarte</p>
                     <p>Transener Transba</p>
                     <p>SmartFarming</p>
@@ -189,42 +197,37 @@
                 </div>
             </div>
             <!--Work Experience-->
-            <div class="workExp ol-xl-4 col-lg-4 col-md-4 col-sm-12 p-5">
+            <div class="workExp col-xl-3 col-lg-3 col-md-3 col-sm-12 p-5">
                 <div class="cvTitle py-2 border-bottom">
                     WORK EXPERIENCE
                 </div>
-                <div class="2021 pt-2">
-                    <h3 class="captionBlue">2021</h3>
-                    <h2 class="companyName">Making Sense LLC</h2>
-                    <p class="contentCv">UX Designer</p>
+                <div class="exp pt-2">
+                    <h5>Making Sense LLC</h5>
+                    <p class="contenido">UX Designer</p>
                 </div>
-                <div class="2018">
-                    <h3 class="captionBlue">2018</h3>
-                    <h2 class="companyName">Enfocarte Producciones</h2>
-                    <p class="contentCv">Freelance SR. Digital Designer</p>
+                <div class="exp">
+                    <h5>Enfocarte Producciones</h5>
+                    <p class="contenido">Freelance SR. Digital Designer</p>
                 </div>
-                <div class="2015">
-                    <h3 class="captionBlue">2015</h3>
-                    <h2 class="companyName">Kevingston</h2>
-                    <p class="contentCv">Sr. Graphic Designer</p>
+                <div class="exp">
+                    <h5>Kevingston</h5>
+                    <p class="contenido">Sr. Graphic Designer</p>
                 </div>
-                <div class="2013">
-                    <h3 class="captionBlue">2013</h3>
-                    <h2 class="companyName">Blear International S.A</h2>
-                    <p class="contentCv">Jr. Graphic Designer</p>
+                <div class="exp">
+                    <h5>Blear International S.A</h5>
+                    <p class="contenido">Jr. Graphic Designer</p>
                 </div>
-                <div class="2012">
-                    <h3 class="captionBlue">2012</h3>
-                    <h2 class="companyName">Falabella S.A</h2>
-                    <p class="contentCv">Freelance Designer</p>
+                <div class="exp">
+                    <h5>Falabella S.A</h5>
+                    <p class="contenido">Freelance Designer</p>
                 </div>
             </div>
             <!--Skills-->
-            <div class="skills ol-xl-4 col-lg-4 col-md-4 col-sm-12 p-5">
+            <div class="skills col-xl-3 col-lg-3 col-md-3 col-sm-12 p-5">
                 <div class="cvTitle py-2 border-bottom">
                     SKILLS
                 </div>
-                <div class="contenidoSkills pt-2">
+                <div class="contenido pt-2">
                     <p>Ux Ui Design</p>
                     <p>Strategic Marketing</p>
                     <p>Branding</p>

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Recife';
+    src: local('Recife Display Book'), local('Recife-Display-Book'),
+        url('RecifeDisplay-Book.woff2') format('woff2'),
+        url('RecifeDisplay-Book.woff') format('woff'),
+        url('RecifeDisplay-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
