@@ -45,6 +45,9 @@
   <!--Animate-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Link al Css-->
   <link rel="stylesheet" href="css/style.css">
 
@@ -53,7 +56,7 @@
 <body>
   <!-- Menú -->
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top menuVanu">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark menuVanu">
       <div class="container-fluid">
         <a class="navbar-brand logo" href="index.html">
           <img src="img/vc_logoblanco.svg" alt="logo vanu carpio">
@@ -65,20 +68,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active menuLink" aria-current="page" href="about.html">ABOUT</a>
+              <a class="nav-link active menuLink" aria-current="page" href="work.html">WORK</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle menuLink" href="work.html" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                WORK
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="work.html">All</a></li>
-                <li><a class="dropdown-item" href="kevingston.html">Kevingston</a></li>
-                <li><a class="dropdown-item" href="transener.html">Transener Transba</a></li>
-                <li><a class="dropdown-item" href="tripadvisor.html">TripAdvisor App</a></li>
-                <li><a class="dropdown-item" href="smartfarming.html">SmartFarming</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link active menuLink" aria-current="page" href="about.html">ABOUT</a>
             </li>
             <li class="nav-item">
               <a class="nav-link menuLink" href="contact.html">CONTACT</a>
@@ -90,7 +83,8 @@
     </nav>
   </header>
 
-  <section class="headWork">
+  <section class="headWork container-fluid m-0">
+    <div class="row m-0">
     <h2 class="stranger">HELLO STRANGER</h2>
     <p class="posts">I post new things on
       <a href="https://dribbble.com/vanucarpio">dribble</a>
@@ -99,60 +93,115 @@
       and also in
       <a href="https://www.instagram.com/vanucarpio/">instagram.</a>
     </p>
+  </div>
   </section>
 
   <!--Project TripAdvisor-->
   <section class="mainProject">
     <div class="projectTitle">
+      <!--Project Title-->
       <h3 class="projecto">TripAdvisor</h3>
-      </p>
-      <p class="descriptionProject">Transener is a company that transports high voltage energy throughout
-        Argentina, which is why it is very important to be able to communicate a sense of unity and homogeneity
-        of the brand's visual identity to all its audiences.</p>
+      <!--Project Description-->
+      <div class="descriptionProject">
+        <p>
+          This is a personal Ux project for a redesign of the "TripAdvisor App". The main purpose was to improve the
+          search filters regarding users' needs. As well as, adding a new loyalty program to maximize the effectiveness
+          of
+          the outcome for all the partners in the App.
+        </p>
+        <!--Boton-->
+        <div class="row m-0 text-center align-items-start">
+          <a href="https://www.behance.net/gallery/109332783/Tripadvisor-UxUi" target="blank" class="buttonPrimary">View
+            More</a>
+        </div>
+      </div>
+
     </div>
-    <img src="img/tripadvisor2.png" alt="Proyecto TripAdvisor" class="itemDouble">
-    <img src="img/tripadvisor3.png" alt="TripAdvisor en uso" class="itemHalf">
-    <img src="img/tripadvisor4.png" alt="Checkout Tripadvisor" class="itemHalf">
+    <img src="img/tripadvisor2.png" alt="Proyecto TripAdvisor" class="itemDouble" data-aos="fade-up"
+      data-aos-duration="2000">
+    <img src="img/tripadvisor4.png" alt="TripAdvisor en uso" class="itemHalf" data-aos="fade-right"
+      data-aos-duration="2000">
+    <img src="img/tripadvisor3.png" alt="Checkout Tripadvisor" class="itemHalf" data-aos="fade-left"
+      data-aos-duration="2000">
   </section>
 
   <!--Project Enfocarte-->
-  <section class="mainEnfo">
-    <div class="projectTitle">
-      <h3 class="projecto">Enfocarte</h3>
-      <p class="descriptionProject">Transener is a company that transports high voltage energy throughout
-        Argentina, which is why it is very important to be able to communicate a sense of unity and homogeneity
-        of the brand's visual identity to all its audiences.</p>
-
+  <section class="mainEnfo container-fluid m-0 p-0">
+    <div class="row m-0 p-0">
+      <!--Title-->
+      <div class="projectTitle col-xl-4 col-lg-4 col-md-4 col-sm-12 align-self-center">
+        <h3 class="projecto">Enfocarte</h3>
+        <!--Descripcion-->
+        <div class="descriptionProject">
+          <p>
+            We create together the new branding for this creative agency, with a strategic and modern mindset.
+          </p>
+          <!--Boton-->
+          <div class="row align-items-start ps-2">
+            <a href="https://vimeo.com/514757900" target="blank" class="buttonPrimary">See the Video</a>
+          </div>
+        </div>
+      </div>
+      <!--Img Enfocarte-->
+      <img src="img/enfocarte1.png" alt="Social Media Enfocarte" class="col-xl-4 col-lg-4 col-md-4 col-sm-12 m-0 p-0">
+      <img src="img/enfocarte3.png" alt="Remera Enfocarte" class="col-xl-4 col-lg-4 col-md-4 col-sm-12 m-0 p-0">
+      <img src="img/enfocarte2.png" alt="Branding Enfocarte" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 m-0 p-0"
+        data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="1000">
     </div>
-    <img src="img/enfocarte1.png" alt="Social Media Enfocarte" class="itemThird">
-    <img src="img/enfocarte3.png" alt="Remera Enfocarte" class="itemThird">
-    <img src="img/enfocarte2.png" alt="Branding Enfocarte" class="itemDouble">
   </section>
 
   <!--Project SmartFarming-->
-  <section class="mainProject">
-    <div class="projectTitle">
-      <h3 class="projecto">SmartFarming</h3>
-      <p class="descriptionProject">Transener is a company that transports high voltage energy throughout
-        Argentina, which is why it is very important to be able to communicate a sense of unity and homogeneity
-        of the brand's visual identity to all its audiences.</p>
-    </div>
-    <div class="videoSmart">
-      <video src="img/SmartFarming_hd1080mp.mp4" controls></video>
+  <section class="mainSf container-fluid m-0 p-0">
+    <div class="row m-0 p-0">
+      <!--Title-->
+      <div class="projecto col-xl-12 col-lg-12 col-md-12 col-sm-12 m-0">
+        <!--Description-->
+        <h3 class="col-12 text-center ">SmartFarming</h3>
+        <div class="descriptionProject text-center col-12 m-0">
+          <p>How about combining data into information and better decisions? SmartFarming is a
+            dairy and beef consulting, with which we develop different pieces for their visual identity, online
+            presence,
+            website, social media, etc.
+          </p>
+          <!--Boton-->
+          <div class="row justify-content-center">
+            <a href="https://www.behance.net/gallery/104952531/Smart-Farming" target="blank"
+              class="buttonPrimary m-0">View More</a>
+          </div>
+        </div>
+      </div>
+      <!--Video-->
+      <div class="videoSmart col-12">
+        <video src="img/SmartFarming_hd1080mp.mp4" controls></video>
+      </div>
+
     </div>
   </section>
 
   <!--Project Kevingston-->
-  <section class="mainKvn">
-    <img src="img/kvnwomen.png" alt="Kevingston Women" class="kvnWomen">
-    <div class="kvnTitles">
-      <h3 class="projecto">Kevingston Women</h3>
-      <p>←</p>
-      <h3 class="projecto">Kevingston Grumpy Girls</h3>
-      <p>→</p>
-    </div>
-    <div class="kvnGirl">
-      <img src="img/kvngirls2.jpeg" alt="Kevingston   Girls">
+  <section class="mainKvn container-fluid m-0 p-0">
+    <div class="row m-0 p-0">
+      <!--Kvn Women-->
+      <div class="kvnWomen align-self-end col-xl-4 col-lg-4 col-md-4 col-sm-12 m-0 p-0 img-fluid" data-aos="fade-right"
+        data-aos-duration="2000">
+        <img src="img/kvnwomen.png" alt="Kevingston Women">
+      </div>
+      <!--Title Project-->
+      <div class="kvnTitles text-center align-self-center col-xl-4 col-lg-4 col-md-4 col-sm-12 m-0">
+        <h3>Kevingston Women & Girls</h3>
+        <!--Descripción-->
+        <p>Product design for the fashion brand "Kevingston", textile design, illustrations, patterns & more ...</p>
+        <!--Boton-->
+        <div class="row justify-content-center">
+          <a href="https://www.behance.net/gallery/104952531/Smart-Farming" target="blank"
+            class="buttonPrimary m-0">View Designs</a>
+        </div>
+      </div>
+      <!--Kvn Girl-->
+      <div class="kvnGirl col-xl-4 col-lg-4 col-md-4 col-sm-12 m-0 img-fluid" data-aos="fade-left"
+        data-aos-duration="2000">
+        <img src="img/kvngirls2.jpeg" alt="Kevingston Girls">
+      </div>
     </div>
   </section>
 
@@ -163,40 +212,71 @@
       <p class="descriptionProject">Transener is a company that transports high voltage energy throughout
         Argentina, which is why it is very important to be able to communicate a sense of unity and homogeneity
         of the brand's visual identity to all its audiences.</p>
-
     </div>
+    <!--Boton-->
+    <div class="row justify-content-center pb-5">
+      <a href="https://www.behance.net/gallery/101515029/Branding-Transener" target="blank"
+        class="buttonPrimary m-0">View
+        More</a>
+    </div>
+
     <div class="imagesT">
-      <img src="img/transener-revista.png" alt="Revista Transener" class="itemThird">
-      <img src="img/transener_brandbook.png" alt=" Brandbook Transener Transba" class="itemThird">
-      <img src="img/transener-manual.png" alt="Manual Transener" class="itemThird">
+      <img src="img/transener-revista.png" alt="Revista Transener" class="itemThird" data-aos="fade-up">
+      <img src="img/transener_brandbook.png" alt=" Brandbook Transener Transba" class="itemThird" data-aos="fade-up">
+      <img src="img/transener-manual.png" alt="Manual Transener" class="itemThird" data-aos="fade-up">
     </div>
 
-    <img src="img/transener.png" alt="Banner    Transener" class="itemDouble">
+    <img src="img/transener.png" alt="Banner    Transener" class="itemDouble" data-aos="zoom-in"
+      data-aos-easing="ease-in-sine" data-aos-duration="1000">
   </section>
 
   <!--Project App Dona Vida-->
   <section class="mainProject">
     <div class="projectTitle">
       <h3 class="projecto">App Doná Vida</h3>
-      <p class="descriptionProject">Transener is a company that transports high voltage energy throughout
-        Argentina, which is why it is very important to be able to communicate a sense of unity and homogeneity
-        of the brand's visual identity to all its audiences.</p>
+      <div class="descriptionProject">
+        <p>
+          This is a side project of Ux/Ui design for an App to connect the pet community. The main idea was to find
+          blood donors for your pets when you need them most ...
+        </p>
+        <!--Boton-->
+        <div class="row m-0 text-center align-items-start">
+          <a href="https://www.behance.net/gallery/101729063/App-Dona-Vida" target="blank" class="buttonPrimary">View
+            Project</a>
+        </div>
+
+      </div>
 
     </div>
     <img src="img/app_donavida.png" alt="App Doná Vida" class="itemDouble">
   </section>
 
   <!--Project App Makers-->
-  <section class="mainMaker">
-    <div class="projectTitle">
-      <h3 class="projecto">App Maker</h3>
-      <p class="descriptionProject">Transener is a company that transports high voltage energy throughout
-        Argentina, which is why it is very important to be able to communicate a sense of unity and homogeneity
-        of the brand's visual identity to all its audiences.</p>
+  <section class="mainMakers container-fluid m-0 p-0">
+    <div class="row m-0 p-0">
+      <!--Title-->
+      <div class="projecto col-xl-12 col-lg-12 col-md-12 col-sm-12 m-0">
+        <h3 class="col-12 text-center">App Makers</h3>
+        <div class="descriptionProject text-center col-12 m-0">
+          <p>
+            Ux project for an app to have all in one, the calendar, task manager you need daily. Follow your goals and
+            make
+            it work!
+          </p>
+          <!--Boton-->
+          <div class="row justify-content-center">
+            <a href="https://docs.google.com/presentation/d/1G8dLjzRMW_oqgW1c98TZcmMiFTXlS3ZOtfQt0NJ3zQI/edit?usp=sharing" target="blank" class="buttonPrimary">View
+              Project</a>
+          </div>
+
+        </div>
+      </div>
+
+      <img src="img/makers2.png" alt="Makers Prototype" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 m-0 p-0"
+        data-aos="fade-right" data-aos-duration="2000">
+      <img src="img/makers1.png" alt="Makers Projects" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 m-0 p-0"
+        data-aos="fade-left" data-aos-duration="2000">
     </div>
-    <img src="img/makers2.png" alt="Makers Prototype" class="itemHalf">
-    <img src="img/makers1.png" alt="Makers Projects" class="itemHalf">
-    <img src="img/makers3.png" alt="Makers Project 1" class="itemHalf">
   </section>
 
   <!--Bloque Contacto-->
@@ -210,6 +290,7 @@
     </p>
   </section>
 
+  <!--Footer-->
   <footer>
     <div class="footerContact">
       <!--COPY alineado a la izquierda-->
@@ -241,6 +322,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
+
+  <!--aos script-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>

@@ -1,0 +1,119 @@
+@import '../base/size';
+@import '../base/reset';
+
+/*Section Contact*/
+.connectHeader{
+    background-color: nth($colors, 7);
+    max-width: 100%;
+    .row{
+        padding: 14% 8%;
+        margin: 0;
+    .stranger{
+        @include encabezadosSecond(nth($colors,6));
+        font-size: 2.5vh;
+        letter-spacing: 10px;
+        text-align: center;
+        padding-bottom: 5vh;
+        @media (max-width: 768px) {
+            font-size: 2vh;
+         } 
+    }
+    .posts{
+        @include encabezados(nth($colors,8));
+        font-size: 5vw;
+        text-align: center;
+        padding: 0;
+        font-weight: nth($fontWeight, 4);
+        @media (max-width: 768px) {
+            font-size: 6vh;
+         } 
+        }
+    #posts2{
+        @include encabezados(nth($colors, 8));
+        font-size: 5vw;
+        text-align: center;
+        padding: 0 5%;
+        @media (max-width: 768px) {
+            font-size: 6vh;
+         } 
+    }
+    
+    p{
+        font-family: $fontPrincipal;
+        font-size: 1.5vw;
+        color: nth($colors, 6);
+        text-align: center;
+        padding: 1% 25%;
+        @media (max-width: 768px) {
+            font-size: 2.5vw;
+            padding: 2% 5%;
+        } 
+
+    }   
+    span{
+        font-size: 7vw;
+        text-align: center;
+        padding: 0;
+    }
+    @media (max-width: 768px) {
+        width: 90%;
+        padding: 25% 5% 15% 5%;
+     } 
+    } 
+}
+
+
+.formContact{
+    max-width: 100%;
+    .row{
+        padding-bottom: 5%;
+        .connect{
+            @include encabezados(nth($colors,8));
+            font-size: 12vw;
+            font-weight: nth($fontWeight, 1);    
+            padding: 2% 2% 0% 2%;
+            @media (max-width: 768px) {
+                padding: 7% 0% 0% 2%;
+             }         
+        }
+        .imageContact{
+            padding: 8%;
+            @media (max-width: 768px) {
+                padding: 2%;
+             } 
+        }
+        .contactame{
+            padding: 3%;
+            width: 40%;
+            .form-label{
+                font-weight: bolder;
+            }
+            .estilosSelectors{
+                &:checked{
+                    background-color: nth($colors, 5);
+                    border-color: nth($colors, 5);
+
+                }
+            }
+            .sendMessage{
+                background-color: nth($colors, 6);
+                border: 1.8px solid nth($colors, 5);
+                border-radius: 30px;
+                color: nth($colors, 5);
+                font-family: $fontPrincipal;
+                font-size: 1rem;
+                font-weight: nth($fontWeight, 3 );
+                
+                &:hover{
+                    background-color: nth($colors, 5);
+                    color: nth($colors, 6);
+                }
+            }
+            @media (max-width: 768px) {
+                width: 95%;
+                padding: 10%;
+             } 
+            
+        }
+    }
+}

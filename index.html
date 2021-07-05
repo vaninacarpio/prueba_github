@@ -1,27 +1,30 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- SEO -->
   <!--Description-->
   <meta name="description"
-    content="This is a portfolio site of the ux design Vanina Carpio, which has some pieces of work, information about her, and where you can get in touch.">
+    content="This is a portfolio site of the ux designer Vanina Carpio, which has some pieces of work, information about her, and where you can get in touch.">
+
   <!--Keywords-->
   <meta name="keywords"
     content="ux, ui, design, user experience, graphic design, web design, strategic, marketing, freelance, portfolio, design maker">
+
   <!--Open Graph-->
   <meta property="og:tittle" content="Portfolio UX Designer Vanu Carpio">
-  <meta property="og:description" content="Hi, I'm Vanina a Strategic Ux/Ui Designer, passionate about design in every aspect and mostly in solving problems ir order to create innovative experiences with great aesthetic.">
-  <meta property="og:url" content="https://vanucarpio.com"/>
-  <meta property="og:image" content="https://ibb.co/L0ZyfdW"/>
+  <meta property="og:description"
+    content="Hi, I'm Vanina a Strategic Ux/Ui Designer, passionate about design in every aspect and mostly in solving problems ir order to create innovative experiences with great aesthetic.">
+  <meta property="og:url" content="https://vanucarpio.com" />
+  <meta property="og:image" content="https://ibb.co/L0ZyfdW" />
   <meta property="og:locale" content="en_ES">
   <meta property="og:type" content="portfolio" />
   <meta property="og:site-name" content="Portfolio Vanu Carpio">
   <meta name="author" content="Vanu Carpio">
-
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -41,6 +44,9 @@
   <!--Title-->
   <title>Vanu Carpio - Design Maker</title>
 
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Link al Css-->
   <link rel="stylesheet" href="css/style.css">
 
@@ -49,7 +55,7 @@
 <body>
   <!-- Menú -->
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top menuVanu">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark menuVanu">
       <div class="container-fluid">
         <a class="navbar-brand logo" href="index.html">
           <img src="img/vc_logoblanco.svg" alt="logo vanu carpio">
@@ -61,20 +67,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active menuLink" aria-current="page" href="about.html">ABOUT</a>
+              <a class="nav-link active menuLink" aria-current="page" href="work.html">WORK</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle menuLink" href="work.html" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                WORK
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="work.html">All</a></li>
-                <li><a class="dropdown-item" href="kevingston.html">Kevingston</a></li>
-                <li><a class="dropdown-item" href="transener.html">Transener Transba</a></li>
-                <li><a class="dropdown-item" href="tripadvisor.html">TripAdvisor App</a></li>
-                <li><a class="dropdown-item" href="smartfarming.html">SmartFarming</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link active menuLink" aria-current="page" href="about.html">ABOUT</a>
             </li>
             <li class="nav-item">
               <a class="nav-link menuLink" href="contact.html">CONTACT</a>
@@ -87,32 +83,83 @@
   </header>
 
   <section class="container-fluid cabeceraIndex">
-    <h1 class="destacados animate__animated animate__slideInLeft">HI I'M VANU CARPIO. <br>
-      A DESIGN MAKER. <br>
-      DIGITAL DESIGNER + <br>
-      UX / UI DESIGNER. <br>
-      ↓
+    <h1 class="destacados animate__animated animate__slideInLeft">
+      <span style='font-size:7vw;'>&#128075;&#127996;</span>
+      <p>Hi I'm Vanu Carpio,<br>
+        a <span id="designMaker">Design Maker</span>, <br>
+        Digital Designer + <br>
+        <span id="designMaker">Ux / Ui Designer.</span> <br>
+        ↓
+      </p>
     </h1>
   </section>
 
   <div class="container p-0 generalWork">
     <section class="row selected">
       <div class="container-fluid align-items-center">
-        <div class="worksTitle">
-          <p class="text-center"> Works Selected</p>
+        <!--Work Selected-->
+        <div>
+          <p class="worksTitle text-center"> Works Selected</p>
+          <p>Hey! Let me show you, some of my works with passionate creatives
+            striving to create uniqueness.</p>
         </div>
-      </div>
-      <div class="container-fluid align-items-center">
-        <div class="imageWorks">
-          <img src="img/micelab1.jpg" class="rounded mx-auto img-fluid d-block" alt="agencia micelab">
+        <!--Image-->
+        <div class="container-fluid align-items-center">
+          <div class="imageWorks" data-aos="zoom-out-up" data-aos-duration="1500">
+            <img src="img/micelab1.jpg" class="rounded mx-auto img-fluid d-block" alt="agencia micelab">
+          </div>
         </div>
-      </div>
+
+        <!--Boton-->
+        <div class="row m-0 text-center align-items-center justify-content-center">
+          <div>
+            <a href="work.html" class="buttonPrimary">View All</a>
+          </div>
+        </div>
     </section>
+
   </div>
+
+  <!--Why Me-->
+  <section class="container-fluid containerWhy">
+    <div class="row m-0 p-0">
+      <div class="col-12 py-0 title">
+        <p data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">Why Me?</p>
+      </div>
+      <!--item 1-->
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 p-5 itemsWhy">
+        <span style='font-size:10vh;'>&#128161;</span>
+        <h4>01-</h4>
+        <h3>Strategic</h3>
+        <p>I like to thinking brands from a strategic perspective, understand their value and design solutions cross to
+          really make your brand shine!</p>
+      </div>
+      <!--item 2-->
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 p-5 itemsWhy">
+        <span style='font-size:10vh;'>&#129304;</span>
+                <h4>02-</h4>
+        <h3>Design</h3>
+        <p>I have experience designing passionate creatives striving to create unique pieces. I really like to make brands shine!</p>
+      </div>
+      <!--item 3-->
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 p-5 itemsWhy">
+        <span style='font-size:10vh;'>&#128640;</span>
+        <h4>03-</h4>
+        <h3>Experiences</h3>
+        <p>I like to balance user and business needs to create friendly and interesting products and experiences.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
   <section class="projects">
     <article>
       <h2 class="caption">WE WORKED WITH</h4>
-        <p> <strong>Projects:</strong> Transener Transba / Nubiral / Soluciones / SmartFarming / Kevingston / Grupo
+        <p> <span>Projects:</span> Transener Transba / Nubiral / Soluciones / SmartFarming / Kevingston / Grupo
           Carcajadas / Enfocarte / Micelab / TripAdvisor / Doná Vida App ●</p>
     </article>
   </section>
@@ -159,6 +206,11 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
 
+  <!--aos script-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

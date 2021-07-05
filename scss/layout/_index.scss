@@ -1,34 +1,91 @@
 .cabeceraIndex{
-    background-image: linear-gradient(to bottom,nth($colors, 7),nth($colors, 3));
-    padding: 18% 5% 8% 8%;
+    background-image: linear-gradient(to bottom right,nth($colors, 6),nth($colors, 1));
+    padding: 16% 5% 6% 8%;
     .destacados{
-        @include encabezados(nth($colors,1));
-        font-size: 5vw;
+        @include encabezados (nth($colors,7));
+        font-size: 7vw;
         animation-duration: 2s;
+        #designMaker{
+            font-weight:nth($fontWeight, 3);
+            color: nth($colors, 5);
+        }
     }
 }
 
 .generalWork{
     max-width: 100%;
+
     .worksTitle{
-        @include encabezadosSecond(nth($colors,2));
+        @include encabezadosSecond(nth($colors,7));
         font-size: 2vw;
         padding-top: 5%;
+        padding-bottom: 0%;
+        text-transform: uppercase;
+        letter-spacing: 6%;
+    }
+    p{
         text-align: center;
+        font-family: $fontSecondary;
+        font-size: 1.2rem; 
+        padding: 0% 30%;
+    }
+    
+    .buttonPrimary{
+            background-color: nth($colors, 6);
+            border: 1.8px solid nth($colors, 5);
+            border-radius: 30px;
+            color: nth($colors, 5);
+            font-family: $fontPrincipal;
+            font-size: 2.5vh;
+            text-transform: uppercase;
+            letter-spacing: 1%;
+            font-weight: nth($fontWeight, 3 );
+            padding: 0.8% 2%;
+            text-decoration: none;
+
+            &:hover{
+                background-color: nth($colors, 5);
+                color: nth($colors, 6);
+            }
     }
     .imageWorks{
-        padding: 5%;
+        padding: 4% 4% 6% 4%;
+        border-radius: 50%;
     }
 }
 
+.containerWhy{
+    padding: 6%;
+    .title{
+        @include encabezados(nth($colors,1));
+        font-size: 14vw;
+        font-weight: nth($fontWeight, 1);
+    }
+    .itemsWhy{
+        h4{
+            @include caption (nth($colors,7));
+            padding-top: 4%;
+            font-size: 1.8vw;
+        }
+        h3{
+            font-family: $fontPrincipal;
+            font-weight: nth($fontWeight, 4);
+            color: nth($colors,7 );
+        }
+        p{
+            @include paragraphs (nth($colors,7));
+        }
+    }
+}
+
+
 .projects{
-    padding: 5%;
+    padding: 8%;
     background-color: nth($colors, 7);
     article{
         padding: 2% 3%;
         .caption{
             @include caption(nth($colors, 6));
-            font-size: 1.5vw;
             text-align: center;
             letter-spacing: 10px;
             padding: 1em;
@@ -38,6 +95,9 @@
             font-size: 4vw;
             text-align: center;
             font-weight: nth($fontWeight,1);
+            span{
+                color: nth($colors, 5 );
+            }
         }
     }
 }
@@ -47,7 +107,6 @@
     padding: 12% 6%;
     #hello{
         @include caption(nth($colors,6));
-        font-size: 1.8vw;
         padding-bottom: 1em;
         letter-spacing: 10px;
         text-align: left;      

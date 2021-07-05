@@ -3,43 +3,62 @@
 /*Section Work*/
 .headWork{
     background-color: nth($colors, 7);
-    padding: 14em 12em 10em 9em;
+    .row{
+    padding: 16% 8%;
     .stranger{
         @include encabezadosSecond(nth($colors,6));
-        font-size: 1rem;
+        font-size: 2vw;
         letter-spacing: 10px;
         text-align: center;
-        padding-bottom: 3rem;
+        padding-bottom: 5vh;
     }
     .posts{
-        @include encabezados(nth($colors,1));
-        font-size: 4rem;
-        text-align: center;
-        a{
-        text-decoration: none;
-        color: nth($colors, 5);
+             @include encabezados(nth($colors,1));
+             font-size: 5.5vw;
+             text-align: center;
+             a{
+             text-decoration: none;
+             color: nth($colors, 5);
+             }
         }
     }
 }
 
+/*TripAdvisor*/
 .mainProject{
     width: $anchoBase;
     @extend %flexboxRow;
     .projectTitle{
         @extend %flexbox;
-        padding: 10%;
+        padding: 4%;
         .projecto{
             font-size: 3rem;
-            @include encabezados(nth($colors,   7));
+            @include encabezados(nth($colors, 7));
+            @extend %flexboxRow;
+            align-items: flex-start;
         }
         .descriptionProject{
-            border-left: 1px solid nth($colors, 7);
-            @include paragraphs (nth($colors,  7));
-            padding: 0 3%;
-            margin: 4%;
-            text-align: left;
             width: 50%;
+            border-left: 1px solid nth($colors, 7);
+            margin: 4%;
+            padding: 2% 3%;
+            p{
+            @include paragraphs (nth($colors,  7));
+            text-align: left;
+            }
+            .buttonPrimary{
+                @extend %buttonPrincipal;
+            }
+            @media (max-width: 768px) {
+               border-left: none;
+               width: 90%;
+            } 
+
         }
+        @media (max-width: 768px) {
+            padding: 15% 4%;
+         } 
+
         }
 
     .itemDouble{
@@ -50,85 +69,133 @@
     }
 }
 
+/*Enfocarte*/
 .mainEnfo{
     width: $anchoBase;
-    @extend %flexboxRow;
     .projectTitle{
-        @extend %flexbox;
-        width: $anchoBase/3;
+        padding: 0% 5%;
         .projecto{
             font-size: 3rem;
             @include encabezados(nth($colors, 7));
-            padding: 0%;
         }
         .descriptionProject{
-            @include paragraphs (nth($colors,   7));
-            padding: 0;
+            p{
+            @include paragraphs (nth($colors,  7));
             text-align: left;
-            width: 60%;
+            }
+            .buttonPrimary{
+                @extend %buttonPrincipal;
+            }
         }
-    }
-    .itemThird{
-        width: $anchoBase/3;
-    }
-    .itemDouble{
-        width: $anchoBase;
+        @media (max-width: 768px) {
+            padding: 20% 10%;
+         } 
+
     }
 }
 
-.mainProject{
-    width: $anchoBase;
-    @extend %flexboxRow;
-    .videoSmart{
-        @extend %flexbox;
-        padding-bottom: 15%;
-        video{
-            width: 70%;
-        }
-    }
-}
-
-.mainKvn{
-    width: $anchoBase;
-    @extend %flexbox;
-    .kvnWomen{
-        width: $anchoBase,3;
-    }
-    .kvnTitles{
-        width: $anchoBase,3;
+/*SmartFarming*/
+.mainSf{
+    .row{
         .projecto{
-            @include encabezados (nth($colors,7));
-            text-align: center;
-            font-size: 3rem;
+            padding: 10% 25%;
+            h3{
+                font-size: 3rem;
+                @include encabezados(nth($colors, 7));
+            }
+            .descriptionProject{
+                margin: 4%;
+                padding: 2% 3%;
+                p{
+                @include paragraphs (nth    ($colors,  7));
+                }
+                .buttonPrimary{
+                    @extend %buttonPrincipal;
+                } 
+                @media (max-width: 768px) {
+                    width: 90%;;
+                 } 
+           
+            }
+                    @media (max-width: 768px) {
+            padding: 25% 4%;
+         } 
 
         }
-        p{
-            @include paragraphs (nth($colors,1));
-            text-align: center;
-            font-size: 4rem;
+        .videoSmart{
+            @extend %flexbox;
+            padding-bottom: 10%;
+            video{
+                width: 80%;
+                @media (max-width: 768px) {
+                    width: 100%;
+                }    
+                
+            }    
+            @media (max-width: 768px) {
+                padding: 0;
+                margin: 0;
+            }
         }
-    }
-    .kvnGirl{
-        width:$anchoBase/3;
-        flex-basis: 30%
     }
 }
 
+/*Kevingston*/
+.mainKvn{
+    height: fit-content;
+    .row{
+        .kvnTitles{
+            padding: 4%;
+            h3{
+                font-size: 3rem;
+                @include encabezados(nth($colors, 7));
+            }
+            p{
+                @include paragraphs (nth    ($colors,  7));
+            }
+            .buttonPrimary{
+                @extend %buttonPrincipal;
+            }    
+            @media (max-width: 768px) {
+                width: 90%;
+                padding: 20% 5%;
+             } 
+
+        }
+        .kvnGirl{
+            img{
+                height: 70%;
+                @media (max-width: 768px) {
+                    height: 85%;
+                }        
+            }
+        }
+    }
+}
+
+/*Transener Transba*/
 .mainTransener{
     .projectTitle{
         @extend %flexbox;
-        padding: 10%;
+        padding: 10% 10% 1% 10%;
+        text-align: center;
             .projecto{
                 font-size: 3rem;
-                @include encabezados(nth($colors,   7));
+                @include encabezados(nth($colors,  7));
             }
             .descriptionProject{
                 @include paragraphs (nth($colors,   7));
                 padding: 0 5%;
                 text-align: center;
                 width: 60%;
+                @media (max-width: 768px) {
+                    width: 90%;
+                } 
             }
     }
+    .buttonPrimary{
+        @extend %buttonPrincipal;        
+    }    
     .imagesT{
         @extend %flexboxRow;
         align-items: center;
@@ -136,7 +203,7 @@
         padding-bottom: 15%;
         .itemThird{
             width: 30%;
-        }    
+        }
     }
     .itemDouble{
         width: $anchoBase;
@@ -144,25 +211,33 @@
     }
 }
 
-.mainMaker{
-    width: $anchoBase;
-    .projectTitle{
-        width: $anchoBase/2;
-        @extend %flexbox;
-        padding: 10%;
-            .projecto{
+/*App Dona Vida*/
+
+
+/*Makers*/
+.mainMakers{
+    .row{
+        .projecto{
+            padding: 10% 25%;
+            h3{
                 font-size: 3rem;
-                @include encabezados(nth($colors,7));
+                @include encabezados(nth($colors, 7));
             }
             .descriptionProject{
-                @include paragraphs (nth($colors,7));
-                padding: 0 5%;
-                text-align: center;
+                margin: 4%;
+                padding: 2% 3%;
+                p{
+                @include paragraphs (nth    ($colors,  7));
+                }
+                .buttonPrimary{
+                    @extend %buttonPrincipal;
+                }    
             }
-    }
-    .itemHalf{
-        @extend %flexbox;
-        width: $anchoBase/2;
-        }
+            @media (max-width: 768px) {
+                width: 90%;
+                padding: 20% 5%;
+             } 
 
+        }
+    }
 }

@@ -3,8 +3,11 @@
 * {
   margin: 0%;
   padding: 0%;
+  list-style: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 /*Colores Variables
@@ -20,10 +23,11 @@ $pañette-black:black;
 /*Principal*/
 /*Secundarias*/
 /*Weight*/
+/*Ancho Total*/
 /*Partials: Components*/
 /*Partials: Functions*/
 /*Extend Flexbox*/
-.mainProject .projectTitle, .mainEnfo .projectTitle, .mainProject .videoSmart, .mainKvn, .mainTransener .projectTitle, .mainMaker .projectTitle, .mainMaker .itemHalf {
+.mainProject .projectTitle, .mainEnfo .projectTitle, .mainProject .videoSmart, .mainKvn, .mainTransener .projectTitle, .mainMaker .projectTitle, .mainMaker .itemHalf, body .generalError .errorText .errorCta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,7 +41,7 @@ $pañette-black:black;
       flex-wrap: wrap;
 }
 
-.mainProject, .mainEnfo, .mainTransener .imagesT {
+.headAbout, .headAbout .typewritter, .headAbout .vanu img, .mainProject, .mainEnfo, .mainTransener .imagesT {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,8 +57,11 @@ $pañette-black:black;
 * {
   margin: 0%;
   padding: 0%;
+  list-style: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 /*Colores Variables
@@ -70,53 +77,240 @@ $pañette-black:black;
 /*Principal*/
 /*Secundarias*/
 /*Weight*/
-header .menuVanu {
-  background-color: black;
-  color: #F4D4E0;
+header {
+  background-color: #FAFAFA;
+  border-bottom: solid 1px #EAEAEA;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 66px;
 }
 
-header .menuVanu .logo {
-  height: 7%;
-  width: 10%;
-  transition: 3s;
-  -moz-transition: 3s;
-  -webkit-transition: 3s;
-  -o-transition: 3s;
-  margin-left: 5%;
+@media (max-width: 991px) {
+  header header {
+    height: initial;
+    padding: 0.75rem 0;
+  }
 }
 
-header .menuVanu .logo:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
+header .container-fluid {
+  padding: 0;
 }
 
-header .menuVanu .navbar-toggler {
-  border: 1px solid #F4D4E0;
+@media (max-width: 991px) {
+  header .container-fluid .container-fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .container-fluid .container-fluid button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  header .container-fluid .container-fluid .c-nav_social {
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+  header .container-fluid .container-fluid .c-nav_social li {
+    margin-left: 0;
+    margin-right: 0.5rem;
+  }
 }
 
-header .menuVanu .navbar-toggler .navbar-toggler-icon {
-  color: #F4D4E0;
+header .navbar {
+  padding: 0.75rem 0 0 0 !important;
+  max-width: 1104px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: unset !important;
+  max-width: 70rem;
 }
 
-header .menuVanu .navbar-toggler .hamburguesa {
-  color: #F4D4E0;
-  background-color: #f4d4e046;
-  border-radius: 10%;
+@media (max-width: 991px) {
+  header .navbar {
+    max-width: 100%;
+    padding: 0 2.5rem !important;
+  }
 }
 
-header .menuVanu #navbarNavDropdown {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 3%;
+header .navbar-collapse {
+  list-style: none;
 }
 
-header .menuVanu #navbarNavDropdown .menuLink {
-  color: #F4D4E0;
-  font-family: "Inconsolata", monospace;
-  letter-spacing: 4px;
+header .nav-item {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  height: 3rem;
 }
 
+header .nav-item:hover .nav-link {
+  color: #8D9094;
+}
+
+header .nav-item:hover .current-link {
+  width: 4px;
+  height: 4px;
+}
+
+header .nav-item .nav-link {
+  padding: 0 !important;
+  font-size: 0.87rem;
+  color: #BABDC2 !important;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+header .nav-item .nav-link:visited {
+  color: none;
+}
+
+header .nav-item .nav-link:active {
+  color: #FF4F3C !important;
+}
+
+header .nav-item .current-link {
+  /*width: 4px;
+            height: 4px;
+            background-color:#FF4F3C;*/
+  width: 0px;
+  height: 0px;
+  background: #BABDC2;
+  border-radius: 100px;
+  margin-top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+header .social-wrapper .c-nav_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  list-style: none;
+  margin-top: 0.3rem;
+}
+
+header .social-wrapper .c-nav_social li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+}
+
+header .social-wrapper .c-nav_social li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .social-wrapper .c-nav_social li a svg {
+  margin: auto;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+header .social-wrapper .c-nav_social li a svg:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+header .social-wrapper .c-nav_social li a svg path {
+  fill: #BABDC2;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+header .social-wrapper .c-nav_social li a svg path:hover {
+  fill: #FF4F3C;
+}
+
+@media (max-width: 991px) {
+  header .social-wrapper .c-nav_social .c-nav_social {
+    margin: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .c-nav_social {
+    margin: 0;
+  }
+}
+
+/*
+    .menuVanu{
+        background-color: nth($colors, 7);
+        color: nth($colors, 1 );
+        .logo{
+            height: 7%;
+            width: 10%;
+            transition: 3s;
+            -moz-transition: 3s;
+            -webkit-transition: 3s;
+            -o-transition: 3s;
+            margin-left: 5%;
+
+            &:hover{
+                @include prefijos (rotate(360deg))
+            }
+        }
+        
+        .navbar-toggler{
+            border: 1px solid nth($colors, 1);
+            .navbar-toggler-icon{
+                color: nth($colors, 1);
+            }
+            .hamburguesa{
+                color: nth($colors, 1);
+                background-color: #f4d4e046;
+                border-radius:10%;
+            }
+        }
+
+        #navbarNavDropdown{
+            justify-content: flex-end;
+            margin-right: 3%;
+            
+            .menuLink{
+                color: nth($colors, 1);
+                font-family: $fontSecondary;
+                letter-spacing: 4px;
+            }        
+        }
+    }*/
 .cabeceraIndex {
   background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#051f42));
   background-image: linear-gradient(to bottom, black, #051f42);
@@ -283,6 +477,118 @@ footer .footerContact .footerSocial ul li a:hover {
   color: white;
 }
 
+/*About Section*/
+.headAbout {
+  padding-top: 5%;
+}
+
+.headAbout .typewritter {
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headAbout .typewritter #quote {
+  padding: 15%;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: black;
+}
+
+.headAbout .vanu {
+  width: 50%;
+  padding-top: 10%;
+}
+
+.headAbout .vanu img {
+  height: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*About Me*/
+.containerAbout .titleAbout {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: #F4D4E0;
+  font-size: 24vh;
+  font-weight: lighter;
+}
+
+.containerAbout .about h4 {
+  font-family: "Inconsolata", monospace;
+  color: #0E3B7C;
+  font-size: 0.8 rem;
+  padding-bottom: 2%;
+}
+
+/*CV*/
+.containerCv .clients .cvTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.containerCv .clients .contenido {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+.containerCv .workExp .cvTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.containerCv .workExp .exp h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #0E3B7C;
+}
+
+.containerCv .workExp .exp .contenido {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+.containerCv .skills .cvTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.containerCv .skills .contenido {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+/*Ancho Total*/
 /*Section Work*/
 .headWork {
   background-color: black;
@@ -396,11 +702,11 @@ footer .footerContact .footerSocial ul li a:hover {
 }
 
 .mainKvn .kvnWomen {
-  width: 33.33333%;
+  width: 100%, 3;
 }
 
 .mainKvn .kvnTitles {
-  width: 33.33333%;
+  width: 100%, 3;
 }
 
 .mainKvn .kvnTitles .projecto {
@@ -489,5 +795,166 @@ footer .footerContact .footerSocial ul li a:hover {
 
 .mainMaker .itemHalf {
   width: 50%;
+}
+
+/*Ancho Total*/
+* {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/*Section Contact*/
+.connectHeader {
+  background-color: black;
+  padding: 12rem 5rem;
+  max-width: 100%;
+}
+
+.connectHeader .row {
+  margin: 0;
+}
+
+.connectHeader .row .stranger {
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 10px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.connectHeader .row .posts {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: #C7E325;
+  font-size: 4rem;
+  text-align: center;
+  padding: 0;
+  font-weight: 600;
+}
+
+.connectHeader .row #posts2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: #C7E325;
+  font-size: 4rem;
+  text-align: center;
+  padding: 0 5%;
+}
+
+.connectHeader .row p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding: 1% 25%;
+  line-height: 1.5em;
+}
+
+.connectHeader .row span {
+  font-size: 5rem;
+  text-align: center;
+  padding: 0;
+}
+
+.formContact {
+  max-width: 100%;
+}
+
+.formContact .row {
+  padding-bottom: 15%;
+}
+
+.formContact .row .connect {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: #C7E325;
+  font-size: 20vh;
+  font-weight: lighter;
+  padding: 4%;
+}
+
+.formContact .row .imageContact {
+  padding: 3%;
+}
+
+.formContact .row .contactame {
+  padding: 3%;
+  width: 40%;
+}
+
+.formContact .row .contactame .form-label {
+  font-weight: bolder;
+}
+
+.formContact .row .contactame .estilosSelectors:checked {
+  background-color: #562fff;
+  border-color: #562fff;
+}
+
+.formContact .row .contactame .sendMessage {
+  background-color: white;
+  border: 1.8px solid #562fff;
+  border-radius: 30px;
+  color: #562fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.formContact .row .contactame .sendMessage:hover {
+  background-color: #562fff;
+  color: white;
+}
+
+/*Error 404*/
+body .generalError {
+  margin-bottom: 6rem;
+}
+
+body .generalError .imageError {
+  padding-top: 12rem;
+  width: 50%;
+}
+
+body .generalError .errorText {
+  padding: 1rem;
+}
+
+body .generalError .errorText h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+}
+
+body .generalError .errorText p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+}
+
+body .generalError .errorText .errorCta {
+  margin-bottom: 3rem;
+}
+
+body .generalError .errorText .errorCta button .errorBotones {
+  background-color: #0E3B7C;
+  color: white;
+  border: 1px solid #0E3B7C;
+  border-radius: 2%;
+}
+
+body .generalError .errorText .errorCta button .errorBotones:hover {
+  color: white;
+  background-color: #66C6C6;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

@@ -19,7 +19,13 @@
 @import 'layout/footer';
 @import 'layout/about';
 @import '../scss/layout/work';
-@import 'layout/contact';
+@import '../scss/layout/contact';
+
+/*Tipografia para destacados*/
+  @font-face {
+      font-family: 'Canela';
+      src: url(Canela-Thin.ttf);
+  }
 
 /*Error 404*/
 body{

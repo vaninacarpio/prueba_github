@@ -3,7 +3,10 @@
 * {
   margin: 0%;
   padding: 0%;
+  list-style: none;
   box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 /*Colores Variables
@@ -18,18 +21,39 @@ $pañette-black:black;
 /*Colores Lista*/
 /*Principal*/
 /*Secundarias*/
+/*Destacados*/
 /*Weight*/
+/*Ancho Total*/
 /*Partials: Components*/
+.mainMakers .row .projecto .descriptionProject .buttonPrimary, .mainTransener .buttonPrimary, .mainKvn .row .kvnTitles .buttonPrimary, .mainSf .row .projecto .descriptionProject .buttonPrimary, .mainEnfo .projectTitle .descriptionProject .buttonPrimary, .mainProject .projectTitle .descriptionProject .buttonPrimary {
+  background-color: white;
+  border: 1.8px solid #562fff;
+  border-radius: 30px;
+  color: #562fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5vh;
+  text-transform: uppercase;
+  letter-spacing: 1%;
+  font-weight: 500;
+  padding: 0.8% 2.5%;
+  text-decoration: none;
+  width: fit-content;
+}
+.mainMakers .row .projecto .descriptionProject .buttonPrimary:hover, .mainTransener .buttonPrimary:hover, .mainKvn .row .kvnTitles .buttonPrimary:hover, .mainSf .row .projecto .descriptionProject .buttonPrimary:hover, .mainEnfo .projectTitle .descriptionProject .buttonPrimary:hover, .mainProject .projectTitle .descriptionProject .buttonPrimary:hover {
+  background-color: #562fff;
+  color: white;
+}
+
 /*Partials: Functions*/
 /*Extend Flexbox*/
-body .generalError .errorText .errorCta, .mainMaker .itemHalf, .mainMaker .projectTitle, .mainTransener .projectTitle, .mainKvn, .mainProject .videoSmart, .mainEnfo .projectTitle, .mainProject .projectTitle {
+body .generalError .errorText .errorCta, .mainTransener .projectTitle, .mainSf .row .videoSmart, .mainProject .projectTitle {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.mainTransener .imagesT, .mainEnfo, .mainProject, .headAbout .vanu img, .headAbout .typewritter, .headAbout {
+.mainTransener .imagesT, .mainProject .projectTitle .projecto, .mainProject, .headAbout .vanu img {
   display: flex;
   flex-flow: row wrap;
 }
@@ -40,7 +64,10 @@ body .generalError .errorText .errorCta, .mainMaker .itemHalf, .mainMaker .proje
 * {
   margin: 0%;
   padding: 0%;
+  list-style: none;
   box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 /*Colores Variables
@@ -55,14 +82,14 @@ $pañette-black:black;
 /*Colores Lista*/
 /*Principal*/
 /*Secundarias*/
+/*Destacados*/
 /*Weight*/
 header .menuVanu {
   background-color: black;
-  color: #F4D4E0;
 }
 header .menuVanu .logo {
-  height: 7%;
-  width: 10%;
+  height: 6%;
+  width: 8%;
   transition: 3s;
   -moz-transition: 3s;
   -webkit-transition: 3s;
@@ -76,36 +103,43 @@ header .menuVanu .logo:hover {
   transform: rotate(360deg);
 }
 header .menuVanu .navbar-toggler {
-  border: 1px solid #F4D4E0;
-}
-header .menuVanu .navbar-toggler .navbar-toggler-icon {
-  color: #F4D4E0;
+  border-color: white;
+  padding: 0.25rem 0.5rem;
 }
 header .menuVanu .navbar-toggler .hamburguesa {
-  color: #F4D4E0;
-  background-color: #f4d4e046;
-  border-radius: 10%;
+  width: 1.2em;
+  height: 1.2em;
+  color: white;
+  border-color: white;
 }
 header .menuVanu #navbarNavDropdown {
   justify-content: flex-end;
-  margin-right: 3%;
+  margin-right: 8%;
 }
-header .menuVanu #navbarNavDropdown .menuLink {
-  color: #F4D4E0;
+header .menuVanu #navbarNavDropdown .nav-item {
+  padding: 0 4%;
+}
+header .menuVanu #navbarNavDropdown .nav-item .menuLink {
+  color: white;
   font-family: "Inconsolata", monospace;
   letter-spacing: 4px;
+  font-size: 0.9rem;
 }
 
 .cabeceraIndex {
-  background-image: linear-gradient(to bottom, black, #051f42);
-  padding: 18% 5% 8% 8%;
+  background-image: linear-gradient(to bottom right, white, #F4D4E0);
+  padding: 16% 5% 6% 8%;
 }
 .cabeceraIndex .destacados {
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
-  color: #F4D4E0;
-  font-size: 5vw;
+  color: black;
+  font-size: 7vw;
   animation-duration: 2s;
+}
+.cabeceraIndex .destacados #designMaker {
+  font-weight: 500;
+  color: #562fff;
 }
 
 .generalWork {
@@ -114,17 +148,72 @@ header .menuVanu #navbarNavDropdown .menuLink {
 .generalWork .worksTitle {
   font-family: "Inconsolata", monospace;
   letter-spacing: 2px;
-  color: #0E3B7C;
+  color: black;
   font-size: 2vw;
   padding-top: 5%;
+  padding-bottom: 0%;
+  text-transform: uppercase;
+  letter-spacing: 6%;
+}
+.generalWork p {
   text-align: center;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.2rem;
+  padding: 0% 30%;
+}
+.generalWork .buttonPrimary {
+  background-color: white;
+  border: 1.8px solid #562fff;
+  border-radius: 30px;
+  color: #562fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5vh;
+  text-transform: uppercase;
+  letter-spacing: 1%;
+  font-weight: 500;
+  padding: 0.8% 2%;
+  text-decoration: none;
+}
+.generalWork .buttonPrimary:hover {
+  background-color: #562fff;
+  color: white;
 }
 .generalWork .imageWorks {
-  padding: 5%;
+  padding: 4% 4% 6% 4%;
+  border-radius: 50%;
+}
+
+.containerWhy {
+  padding: 6%;
+}
+.containerWhy .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: #F4D4E0;
+  font-size: 14vw;
+  font-weight: lighter;
+}
+.containerWhy .itemsWhy h4 {
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 10px;
+  color: black;
+  font-size: 2vw;
+  padding-top: 4%;
+  font-size: 1.8vw;
+}
+.containerWhy .itemsWhy h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: black;
+}
+.containerWhy .itemsWhy p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2vh;
+  color: black;
 }
 
 .projects {
-  padding: 5%;
+  padding: 8%;
   background-color: black;
 }
 .projects article {
@@ -134,7 +223,7 @@ header .menuVanu #navbarNavDropdown .menuLink {
   font-family: "Inconsolata", monospace;
   letter-spacing: 10px;
   color: white;
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-align: center;
   letter-spacing: 10px;
   padding: 1em;
@@ -147,6 +236,9 @@ header .menuVanu #navbarNavDropdown .menuLink {
   text-align: center;
   font-weight: lighter;
 }
+.projects article p span {
+  color: #562fff;
+}
 
 .contact {
   background-image: linear-gradient(to right, #051f42, #0E3B7C);
@@ -156,7 +248,7 @@ header .menuVanu #navbarNavDropdown .menuLink {
   font-family: "Inconsolata", monospace;
   letter-spacing: 10px;
   color: white;
-  font-size: 1.8vw;
+  font-size: 2vw;
   padding-bottom: 1em;
   letter-spacing: 10px;
   text-align: left;
@@ -220,21 +312,22 @@ footer .footerContact .footerSocial ul li a:hover {
 
 /*About Section*/
 .headAbout {
-  padding-top: 5%;
+  padding-top: 35%;
 }
-.headAbout .typewritter {
-  width: 50%;
-  align-items: center;
-}
-.headAbout .typewritter #quote {
-  padding: 15%;
-  font-size: 3rem;
+.headAbout .quote {
+  padding: 15% 8%;
+  font-size: 4vw;
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   color: black;
 }
+@media (max-width: 768px) {
+  .headAbout .quote {
+    padding: 20% 15% 5% 12%;
+    font-size: 7vw;
+  }
+}
 .headAbout .vanu {
-  width: 50%;
   padding-top: 10%;
 }
 .headAbout .vanu img {
@@ -251,13 +344,22 @@ footer .footerContact .footerSocial ul li a:hover {
     opacity: 1;
   }
 }
+@media (max-width: 768px) {
+  .headAbout .vanu img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 /*About Me*/
-.containerAbout .titleAbout {
+.containerAbout {
+  padding-bottom: 8%;
+}
+.containerAbout .title {
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   color: #F4D4E0;
-  font-size: 24vh;
+  font-size: 14vw;
   font-weight: lighter;
 }
 .containerAbout .about h4 {
@@ -268,19 +370,31 @@ footer .footerContact .footerSocial ul li a:hover {
 }
 
 /*CV*/
+.containerCv .clients {
+  padding-bottom: 5%;
+}
 .containerCv .clients .cvTitle {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
+  padding: 2% 10% 2% 10%;
 }
 .containerCv .clients .contenido {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
+  padding: 2% 10% 2% 10%;
+}
+.containerCv .workExp {
+  padding-bottom: 5%;
 }
 .containerCv .workExp .cvTitle {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
+  padding: 2% 10% 2% 10%;
+}
+.containerCv .workExp .exp {
+  padding: 2% 10% 0% 10%;
 }
 .containerCv .workExp .exp h5 {
   font-family: "Montserrat", sans-serif;
@@ -296,59 +410,79 @@ footer .footerContact .footerSocial ul li a:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
+  padding: 2% 10% 2% 10%;
 }
 .containerCv .skills .contenido {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
+  padding: 2% 10% 2% 10%;
 }
 
+/*Ancho Total*/
 /*Section Work*/
 .headWork {
   background-color: black;
-  padding: 14em 12em 10em 9em;
 }
-.headWork .stranger {
+.headWork .row {
+  padding: 16% 8%;
+}
+.headWork .row .stranger {
   font-family: "Inconsolata", monospace;
   letter-spacing: 2px;
   color: white;
-  font-size: 1rem;
+  font-size: 2vw;
   letter-spacing: 10px;
   text-align: center;
-  padding-bottom: 3rem;
+  padding-bottom: 5vh;
 }
-.headWork .posts {
+.headWork .row .posts {
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   color: #F4D4E0;
-  font-size: 4rem;
+  font-size: 5.5vw;
   text-align: center;
 }
-.headWork .posts a {
+.headWork .row .posts a {
   text-decoration: none;
   color: #562fff;
 }
 
+/*TripAdvisor*/
 .mainProject {
   width: 100%;
 }
 .mainProject .projectTitle {
-  padding: 10%;
+  padding: 4%;
 }
 .mainProject .projectTitle .projecto {
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   color: black;
+  align-items: flex-start;
 }
 .mainProject .projectTitle .descriptionProject {
-  border-left: 1px solid black;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
-  color: black;
-  padding: 0 3%;
-  margin: 4%;
-  text-align: left;
   width: 50%;
+  border-left: 1px solid black;
+  margin: 4%;
+  padding: 2% 3%;
+}
+.mainProject .projectTitle .descriptionProject p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2vh;
+  color: black;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .mainProject .projectTitle .descriptionProject {
+    border-left: none;
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .mainProject .projectTitle {
+    padding: 15% 4%;
+  }
 }
 .mainProject .itemDouble {
   width: 100%;
@@ -357,74 +491,115 @@ footer .footerContact .footerSocial ul li a:hover {
   width: 50%;
 }
 
+/*Enfocarte*/
 .mainEnfo {
   width: 100%;
 }
 .mainEnfo .projectTitle {
-  width: 33.3333333333%;
+  padding: 0% 5%;
 }
 .mainEnfo .projectTitle .projecto {
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   color: black;
-  padding: 0%;
 }
-.mainEnfo .projectTitle .descriptionProject {
+.mainEnfo .projectTitle .descriptionProject p {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 2.2vh;
   color: black;
-  padding: 0;
   text-align: left;
-  width: 60%;
 }
-.mainEnfo .itemThird {
-  width: 33.3333333333%;
-}
-.mainEnfo .itemDouble {
-  width: 100%;
+@media (max-width: 768px) {
+  .mainEnfo .projectTitle {
+    padding: 20% 10%;
+  }
 }
 
-.mainProject {
-  width: 100%;
+/*SmartFarming*/
+.mainSf .row .projecto {
+  padding: 10% 25%;
 }
-.mainProject .videoSmart {
-  padding-bottom: 15%;
-}
-.mainProject .videoSmart video {
-  width: 70%;
-}
-
-.mainKvn {
-  width: 100%;
-}
-.mainKvn .kvnWomen {
-  width: 100%, 3;
-}
-.mainKvn .kvnTitles {
-  width: 100%, 3;
-}
-.mainKvn .kvnTitles .projecto {
+.mainSf .row .projecto h3 {
+  font-size: 3rem;
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   color: black;
-  text-align: center;
-  font-size: 3rem;
 }
-.mainKvn .kvnTitles p {
+.mainSf .row .projecto .descriptionProject {
+  margin: 4%;
+  padding: 2% 3%;
+}
+.mainSf .row .projecto .descriptionProject p {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
-  color: #F4D4E0;
-  text-align: center;
-  font-size: 4rem;
+  font-size: 2.2vh;
+  color: nth #F4D4E0, #0E3B7C, #051f42, #66C6C6, #562fff, white, black, #C7E325, 7;
 }
-.mainKvn .kvnGirl {
-  width: 33.3333333333%;
-  flex-basis: 30%;
+@media (max-width: 768px) {
+  .mainSf .row .projecto .descriptionProject {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .mainSf .row .projecto {
+    padding: 25% 4%;
+  }
+}
+.mainSf .row .videoSmart {
+  padding-bottom: 10%;
+}
+.mainSf .row .videoSmart video {
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .mainSf .row .videoSmart video {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .mainSf .row .videoSmart {
+    padding: 0;
+    margin: 0;
+  }
 }
 
+/*Kevingston*/
+.mainKvn {
+  height: fit-content;
+}
+.mainKvn .row .kvnTitles {
+  padding: 4%;
+}
+.mainKvn .row .kvnTitles h3 {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: black;
+}
+.mainKvn .row .kvnTitles p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2vh;
+  color: nth #F4D4E0, #0E3B7C, #051f42, #66C6C6, #562fff, white, black, #C7E325, 7;
+}
+@media (max-width: 768px) {
+  .mainKvn .row .kvnTitles {
+    width: 90%;
+    padding: 20% 5%;
+  }
+}
+.mainKvn .row .kvnGirl img {
+  height: 70%;
+}
+@media (max-width: 768px) {
+  .mainKvn .row .kvnGirl img {
+    height: 85%;
+  }
+}
+
+/*Transener Transba*/
 .mainTransener .projectTitle {
-  padding: 10%;
+  padding: 10% 10% 1% 10%;
+  text-align: center;
 }
 .mainTransener .projectTitle .projecto {
   font-size: 3rem;
@@ -434,11 +609,16 @@ footer .footerContact .footerSocial ul li a:hover {
 }
 .mainTransener .projectTitle .descriptionProject {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 2.2vh;
   color: black;
   padding: 0 5%;
   text-align: center;
   width: 60%;
+}
+@media (max-width: 768px) {
+  .mainTransener .projectTitle .descriptionProject {
+    width: 90%;
+  }
 }
 .mainTransener .imagesT {
   align-items: center;
@@ -452,30 +632,181 @@ footer .footerContact .footerSocial ul li a:hover {
   width: 100%;
 }
 
-.mainMaker {
-  width: 100%;
+/*App Dona Vida*/
+/*Makers*/
+.mainMakers .row .projecto {
+  padding: 10% 25%;
 }
-.mainMaker .projectTitle {
-  width: 50%;
-  padding: 10%;
-}
-.mainMaker .projectTitle .projecto {
+.mainMakers .row .projecto h3 {
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   color: black;
 }
-.mainMaker .projectTitle .descriptionProject {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
-  color: black;
-  padding: 0 5%;
-  text-align: center;
+.mainMakers .row .projecto .descriptionProject {
+  margin: 4%;
+  padding: 2% 3%;
 }
-.mainMaker .itemHalf {
-  width: 50%;
+.mainMakers .row .projecto .descriptionProject p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2vh;
+  color: nth #F4D4E0, #0E3B7C, #051f42, #66C6C6, #562fff, white, black, #C7E325, 7;
+}
+@media (max-width: 768px) {
+  .mainMakers .row .projecto {
+    width: 90%;
+    padding: 20% 5%;
+  }
 }
 
+/*Ancho Total*/
+* {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/*Section Contact*/
+.connectHeader {
+  background-color: black;
+  max-width: 100%;
+}
+.connectHeader .row {
+  padding: 14% 8%;
+  margin: 0;
+}
+.connectHeader .row .stranger {
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 2.5vh;
+  letter-spacing: 10px;
+  text-align: center;
+  padding-bottom: 5vh;
+}
+@media (max-width: 768px) {
+  .connectHeader .row .stranger {
+    font-size: 2vh;
+  }
+}
+.connectHeader .row .posts {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: #C7E325;
+  font-size: 5vw;
+  text-align: center;
+  padding: 0;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .connectHeader .row .posts {
+    font-size: 6vh;
+  }
+}
+.connectHeader .row #posts2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: #C7E325;
+  font-size: 5vw;
+  text-align: center;
+  padding: 0 5%;
+}
+@media (max-width: 768px) {
+  .connectHeader .row #posts2 {
+    font-size: 6vh;
+  }
+}
+.connectHeader .row p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+  color: white;
+  text-align: center;
+  padding: 1% 25%;
+}
+@media (max-width: 768px) {
+  .connectHeader .row p {
+    font-size: 2.5vw;
+    padding: 2% 5%;
+  }
+}
+.connectHeader .row span {
+  font-size: 7vw;
+  text-align: center;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .connectHeader .row {
+    width: 90%;
+    padding: 25% 5% 15% 5%;
+  }
+}
+
+.formContact {
+  max-width: 100%;
+}
+.formContact .row {
+  padding-bottom: 5%;
+}
+.formContact .row .connect {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: #C7E325;
+  font-size: 12vw;
+  font-weight: lighter;
+  padding: 2% 2% 0% 2%;
+}
+@media (max-width: 768px) {
+  .formContact .row .connect {
+    padding: 7% 0% 0% 2%;
+  }
+}
+.formContact .row .imageContact {
+  padding: 8%;
+}
+@media (max-width: 768px) {
+  .formContact .row .imageContact {
+    padding: 2%;
+  }
+}
+.formContact .row .contactame {
+  padding: 3%;
+  width: 40%;
+}
+.formContact .row .contactame .form-label {
+  font-weight: bolder;
+}
+.formContact .row .contactame .estilosSelectors:checked {
+  background-color: #562fff;
+  border-color: #562fff;
+}
+.formContact .row .contactame .sendMessage {
+  background-color: white;
+  border: 1.8px solid #562fff;
+  border-radius: 30px;
+  color: #562fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.formContact .row .contactame .sendMessage:hover {
+  background-color: #562fff;
+  color: white;
+}
+@media (max-width: 768px) {
+  .formContact .row .contactame {
+    width: 95%;
+    padding: 10%;
+  }
+}
+
+/*Tipografia para destacados*/
+@font-face {
+  font-family: "Canela";
+  src: url(Canela-Thin.ttf);
+}
 /*Error 404*/
 body .generalError {
   margin-bottom: 6rem;

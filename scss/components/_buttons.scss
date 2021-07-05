@@ -1,10 +1,19 @@
-%mainButtons{
-    border-color: 1px solid nth($colors, 7);
-    padding: 2px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-family: $fontSecondary;
+%buttonPrincipal{
+    background-color: nth($colors, 6);
+    border: 1.8px solid nth($colors, 5);
+    border-radius: 30px;
+    color: nth($colors, 5);
+    font-family: $fontPrincipal;
+    font-size: 2.5vh;
     text-transform: uppercase;
-    letter-spacing: 1px;
-  }
+    letter-spacing: 1%;
+    font-weight: nth($fontWeight, 3 );
+    padding: 0.8% 2.5%;
+    text-decoration: none;
+    width: fit-content;
+
+    &:hover{
+        background-color: nth($colors, 5);
+        color: nth($colors, 6);
+    }
+}

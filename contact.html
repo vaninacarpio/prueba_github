@@ -12,7 +12,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- SEO -->
   <!--Description-->
   <meta name="description"
@@ -50,6 +50,9 @@
   <!--Animate-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
   <!-- Link al Css-->
   <link rel="stylesheet" href="css/style.css">
 
@@ -58,7 +61,7 @@
 <body>
   <!-- Menú -->
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top menuVanu">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark menuVanu">
       <div class="container-fluid">
         <a class="navbar-brand logo" href="index.html">
           <img src="img/vc_logoblanco.svg" alt="logo vanu carpio">
@@ -70,20 +73,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active menuLink" aria-current="page" href="about.html">ABOUT</a>
+              <a class="nav-link active menuLink" aria-current="page" href="work.html">WORK</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle menuLink" href="work.html" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                WORK
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="work.html">All</a></li>
-                <li><a class="dropdown-item" href="kevingston.html">Kevingston</a></li>
-                <li><a class="dropdown-item" href="transener.html">Transener Transba</a></li>
-                <li><a class="dropdown-item" href="tripadvisor.html">TripAdvisor App</a></li>
-                <li><a class="dropdown-item" href="smartfarming.html">SmartFarming</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link active menuLink" aria-current="page" href="about.html">ABOUT</a>
             </li>
             <li class="nav-item">
               <a class="nav-link menuLink" href="contact.html">CONTACT</a>
@@ -95,27 +88,34 @@
     </nav>
   </header>
 
-  <section class="container headContact">
+  <section class="container connectHeader">
     <div class="row">
-      <h2 class="stranger">LET'S CONNECT!</h2>
+      <h2 class="stranger">CHAT WITH ME!</h2>
       <h1 class="posts">Need some help?</h1>
-      <p class="subtitle">Let’s get in touch, for any project inquiries or even simply say hi, just leave a
+      <h1 id="posts2"> Take a coffee with me ...</h1>
+      <p>Let’s get in touch, for any project inquiries or even simply say hi, just leave a
         message and I’ll do my best to get back to you in a timely matter.</p>
+        <span data-aos="fade-up"
+        data-aos-duration="1500">&#9749;</span>
     </div>
   </section>
 
   <section class="container formContact">
-    <div class="row contactSecond">
+    <div class="row">
+      <!--Quote-->
+      <div data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" data-aos-duration="1000" class="connect">Let's Connect!</div>
       <!--Img Contact-->
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex">
-        <img src="img/formulario.png" alt="Frase" class="img-fluid m-auto mx-auto rounded-circle contactThird">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex imageContact">
+        <img src="img/quote1.png" alt="Frase" class="img-fluid m-auto mx-auto rounded-circle">
       </div>
       <!--Form Contact-->
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 contactFourth">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 contactame">
         <form>
           <!--Asunto-->
           <div>
-            <label for="formControlInput" class="form-label">How can I help you?</label>
+            <label for="formControlInput" class="form-label">How can I help you?*</label>
             <input type="text" class="form-control mb-3" id="formControlInput" required>
           </div>
           <!--Name-->
@@ -134,19 +134,19 @@
           <div>
             <label for="formControlInput" class="form-label">Project Stage?*</label>
             <div class="form-check opStatus">
-              <input class="form-check-input mb-5" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <input class="form-check-input mb-5 estilosSelectors" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
               <label class="form-check-label opciones" for="flexRadioDefault1">
                 <strong>Baby Born</strong> (I have an idea but I don’t know how to go on).
               </label>
             </div>
             <div class="form-check opStatus">
-              <input class="form-check-input mb-5" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <input class="form-check-input mb-5 estilosSelectors" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
               <label class="form-check-label opciones" for="flexRadioDefault1">
                 <strong>Adult</strong> (I have a product or work in progress).
               </label>
             </div>
             <div class="form-check opStatus">
-              <input class="form-check-input mb-5" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <input class="form-check-input mb-5 estilosSelectors" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
               <label class="form-check-label opciones" for="flexRadioDefault2">
                 <strong>One Design</strong> (I only need your help for a piece of design).
               </label>
@@ -159,11 +159,11 @@
 
             <div class="mb-3">
               <textarea class="form-control placeTexto" id="exampleFormControlTextarea1" rows="3"
-                placeholder="Tell me a little about your project, timeline and  budget."></textarea>
+                placeholder="Tell me a little about your project, timeline and budget."></textarea>
             </div>
           </div>
 
-          <button type="submit" class="btn btn-primary boton">SEND MESSAGE</button>
+          <button type="submit" class="btn btn-primary sendMessage">SEND MESSAGE</button>
         </form>
       </div>
     </div>
@@ -210,6 +210,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
+
+  <!--JavaScript AOS-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

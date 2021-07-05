@@ -22,11 +22,12 @@
     font-family: $fontSecondary;
     letter-spacing: 10px;
     color: $colors; 
+    font-size: 2vw;
 }
 
 @mixin paragraphs ($colors){
     font-family: $fontPrincipal;
-    font-size: 0.8rem;
+    font-size: 2.2vh;
     color: $colors;
 }
 

@@ -1,19 +1,17 @@
 /*About Section*/
 .headAbout{
-    @extend %flexboxRow;
-    padding-top: 5%;
-    .typewritter{
-        @extend %flexboxRow;
-        width: 50%;
-        align-items: center;
-        #quote{
-            padding: 15%;
-            font-size: 3rem;
-            @include encabezados(nth($colors,7));
-        }
+    padding-top: 35%;
+    .quote{
+        padding: 15% 8%;
+        font-size: 4vw;
+        @include encabezados(nth($colors,7));
+        @media (max-width: 768px) {
+            padding: 20% 15% 5% 12%;
+            font-size: 7vw;
+             } 
+
     }
     .vanu{
-        width: 50%;
         padding-top: 10%;
         img{
             height: 90%;
@@ -29,15 +27,21 @@
                     opacity: 1;
                 }
             }
+            @media (max-width: 768px) {
+                width: 100%;
+                height: auto;
+                 } 
+    
         }        
     }
 }
 
 /*About Me*/
 .containerAbout{
-    .titleAbout{
+    padding-bottom: 8%;
+    .title{
         @include encabezados(nth($colors,1));
-        font-size: 24vh;
+        font-size: 14vw;
         font-weight: nth($fontWeight, 1);
     }
     .about{
@@ -57,17 +61,21 @@
             font-family: $fontPrincipal;
             font-size: 0.8rem;
             font-weight: nth($fontWeight, 4);
+            padding: 2% 10% 2% 10%;
         }
         .contenido{
             font-family: $fontPrincipal;
             font-size: 0.9rem;
+            padding: 2% 10% 2% 10%;
         }
+        padding-bottom: 5%;
     }
     .workExp{
         .cvTitle{
             font-family: $fontPrincipal;
             font-size: 0.8rem;
             font-weight: nth($fontWeight, 4);
+            padding: 2% 10% 2% 10%;
             }
         .exp{
             h5{
@@ -80,7 +88,9 @@
                 font-family: $fontPrincipal;
                 font-size: 0.9rem;
                 }
+                padding: 2% 10% 0% 10%;
         }
+        padding-bottom: 5%;
     }
     
     .skills{
@@ -88,10 +98,13 @@
             font-family: $fontPrincipal;
             font-size: 0.8rem;
             font-weight: nth($fontWeight, 4);
+            padding: 2% 10% 2% 10%;
+
         }
         .contenido{
             font-family: $fontPrincipal;
             font-size: 0.9rem;
+            padding: 2% 10% 2% 10%;
         }
     }
 }
